@@ -315,25 +315,27 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
 }
 
-.resume_link {
+#project_links {
+  display: block;
+  margin: 32px auto 0 auto;
+  width: 100%;
+}
+
+.button {
   display: block;
   float: right;
-  width: 90px;
+  width: 256px;
   height:70px;
-  text-indent: -5000px;
+  text-align: center !important;
+  box-sizing: border-box;
   overflow: hidden;
   background: #212121;
 }
 
-.portfolio_link {
-  display: block;
-  float: right;
-  width: 90px;
-  height:70px;
-  text-indent: -5000px;
-  overflow: hidden;
-  background: #212121;
-  margin-left: 10px;
+.button_link {
+  font-weight: 300 !important;
+  font-size: 1.3875rem;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
 }
 
 #main_content_wrap {
@@ -369,7 +371,7 @@ Small Device Styles
   }
 
   #project_title {
-  font-size: 32px;
+    font-size: 32px;
   }
 
   h1 {
