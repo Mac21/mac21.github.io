@@ -103,7 +103,7 @@ footer p {
 
 a {
   text-decoration: none;
-  color: #007edf;
+  color: #fff;
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -118,7 +118,10 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
-a:hover, a:focus {text-decoration: underline;}
+a:hover, a:focus {
+  color: #007edf;
+  text-decoration: underline;
+}
 
 footer a {
   color: #F2F2F2;
@@ -322,20 +325,26 @@ Full-Width Styles
 }
 
 .button {
-  display: block;
   float: right;
   width: 256px;
   height:70px;
-  text-align: center !important;
-  box-sizing: border-box;
   overflow: hidden;
+  text-align: center !important;
   background: #212121;
+  display: -webkit-flex;
+  box-sizing: border-box;
 }
 
 .button_link {
+  display: block;
+  -webkit-align-self: center;
   font-weight: 300 !important;
   font-size: 1.3875rem;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+}
+
+.row {
+  color: #fff;
 }
 
 #main_content_wrap {
